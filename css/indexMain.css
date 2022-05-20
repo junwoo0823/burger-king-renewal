@@ -105,7 +105,7 @@ iframe {
     height: 40px;
     transform: translate(20%, -50%);
     border: none;
-    background: url(/image/btn_prev.png) no-repeat;
+    background: url(../img/btn_prev.png) no-repeat;
 }
 
 #nextBtn {
@@ -116,7 +116,7 @@ iframe {
     height: 40px;
     transform: translate(-10%, -50%);
     border: none;
-    background: url(/image/btn_next.png) no-repeat;
+    background: url(../img/btn_next.png) no-repeat;
 }
 
 /* 주문 */
