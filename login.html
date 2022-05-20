@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/icon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/loginMain.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="fixedBar">
+            <div class="logo-part">
+                <a href="./index.html">
+                    <img src="./img/logo.png" alt="logo.png" width="120">
+                </a>
+                <span>버거킹</span>
+            </div>
+        </div>
+    </header>
+    <nav class="fixedBar-bottom">
+        <span>HOME&nbsp; &gt; &nbsp;로그인</span>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="main-title">
+                <span class="main-text">YOUR WAY</span>
+                <span class="main-text">어서오세요! 버거킹입니다.</span>
+            </div>
+            <div class="flex main-content">
+                <div class="divide login-field1">
+                    <span class="login-text"><i class="icon fa-solid fa-key"></i>일반 로그인</span>
+                    <div class="info-input">
+                        <input type="text" id="input-id" placeholder="아이디 (이메일)">
+                        <input type="password" id="input-passwd" placeholder="비밀번호">
+                        <i id="passwd-icon" class="fa-solid fa-eye-slash" onclick="changeBtn()"></i>
+                    </div>
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="check1"><label for="check1">아이디 저장</label>
+                        <input type="checkbox" id="check2"><label for="check2">자동 로그인</label>
+                    </div>
+                    <div>
+                        <button class="login-btn">로그인</button>
+                        <button class="join-btn">회원 가입</button>
+                    </div>
+                    <ul class="flex info-search">
+                        <li><a href="">아이디 찾기</a></li>
+                        <li><a href="">비밀번호 찾기</a></li>
+                    </ul>
+                </div>
+                <div class="divide login-field2">
+                    <span class="login-text"><i class="icon fa-solid fa-unlock-keyhole"></i>간편 로그인</span>
+                    <div class="btn-group">
+                        <button class="other-login naver-login">
+                            <img src="./img/naver_icon.gif" alt="naver-icon" class="naver-icon">
+                            <span>네이버 로그인</span>
+                        </button>
+                        <button class="other-login kakao-login">
+                            <img src="./img/kakao_icon.gif" alt="kakao-icon" class="kakao-icon">
+                            <span>카카오톡 로그인</span>
+                        </button>
+                        <button class="other-login apple-login">
+                            <img src="./img/apple_icon.gif" alt="apple-icon" class="apple-icon">
+                            <span>애플 로그인</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="divide login-field3">
+                    <span class="login-text"><i class="icon fa-solid fa-user-lock"></i>비회원</span>
+                    <div class="btn-group">
+                        <button class="no-login order-go">주문하기</button>
+                        <button class="no-login order-info">내역 확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <section class="footer-top">
+            <div class="footer-top-text1">
+                <h3>집에서 만나는 버거킹!</h3>
+                <p>딜리버리 전화주문 안내 10:00~22:00 / 연중무휴 (※매장별로 상이할 수 있습니다.)</p>
+            </div>
+            <div class="footer-top-text2">
+                <img src="./img/tel_img.png" alt="tel-img">
+                <p>1599-0505</p>
+            </div>
+        </section>
+        <section class="footer-bottom">
+            <div class="footer-bottom-text1">
+                <h1>BURGER KING</h1>
+                <p>서울 종로구 삼봉로 71 G 타워 2층 주식회사 비케이알</p>
+                <p>사업자 등록번호 101-86-76277 / (주)BKR 대표이사 문영주</p>
+                <p>Copyright 2019 BKR Co., Ltd. All right Reserved</p>
+            </div>
+            <div class="footer-bottom-text2">
+                <ul>
+                    <li>이용약관</li>
+                    <li>개인정보취급방침</li>
+                    <li>법적고지</li>
+                </ul>
+                <button>인재채용</button>
+                <button>가맹점모집</button>
+            </div>
+        </section>
+    </footer>
+    <a class="top-btn" href="#"><img src="./img/top_btn.png" alt="top-btn"></a>
+    <!-- Login JS -->
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

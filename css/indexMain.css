@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+#container {
+    margin-top: 120px;
+}
+
+/* 영상 */
+.youtube {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.bread {
+    background: var(--bread);
+    width: var(--width);
+    height: 90px;
+    border-radius: 100px 100px 5px 5px;
+}
+
+#recommend {
+    position: relative;
+    top: 15px;
+    font-family: 'yg-jalnan', serif;
+    font-size: 35px;
+    color: white;
+    user-select: none;
+}
+
+.menu-video {
+    margin: 8px 0 5px;
+}
+
+iframe {
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.sns {
+    width: var(--width);
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px 5px 20px 20px;
+    background: var(--bread);
+}
+
+.sns img {
+    position: relative;
+    top: 8px;
+    width: 70px;
+    height: 70px;
+    margin: 0 5px;
+    object-fit: cover;
+}
+
+.sns a {
+    display: flex;
+}
+
+.snsText {
+    font-family: 'yg-jalnan', serif;
+    color: white;
+    position: relative;
+    top: 10px;
+}
+
+.snsText p {
+    height: 17px;
+    border-radius: 3px;
+    background: white;
+    font-family: 'NanumSquareRound', serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--black);
+}
+
+/* 캐러셀 */
+.carousel-container {
+    position: relative;
+    width: var(--width);
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.carousel-slide {
+    display: flex;
+    object-fit: cover;
+}
+
+.carousel-slide img {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#prevBtn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 35px;
+    height: 40px;
+    transform: translate(20%, -50%);
+    border: none;
+    background: url(/image/btn_prev.png) no-repeat;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 35px;
+    height: 40px;
+    transform: translate(-10%, -50%);
+    border: none;
+    background: url(/image/btn_next.png) no-repeat;
+}
+
+/* 주문 */
+.order {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+.order .appImg {
+    border-radius: 20px 0 0 20px;
+}
+
+.order .deliveryImg {
+    border-radius: 0 20px 20px 0;
+}

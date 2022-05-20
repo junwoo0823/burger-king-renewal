@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+#header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 120px;
+    background: white;
+}
+
+.fixedBar {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 0px 5px var(--black);
+}
+
+.fixedBar div {
+    margin-top: 50px;
+}
+
+.fixedBar ul {
+    display: flex;
+    margin: auto 100px;
+    font-family: 'yg-jalnan', serif;
+    font-size: 20px;
+}
+
+.fixedBar li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+.menu1 span::after,
+.menu3 span::after {
+    content: "▼";
+    position: relative;
+    bottom: 3px;
+    left: 5px;
+    font-size: 1px;
+}
+
+.menuBar span {
+    height: 100%;
+}
+
+.menuBar>li {
+    position: relative;
+    padding: 50px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menuBar>li .submenu {
+    display: none;
+    position: absolute;
+}
+
+.menuBar .menu1sub {
+    top: 120px;
+    left: -160px;
+}
+
+.menuBar .menu3sub {
+    top: 120px;
+    left: -150px;
+}
+
+.menuBar>li:hover .submenu {
+    display: block;
+}
+
+.menuBar>li .submenu>li {
+    width: 150px;
+    padding: 10px;
+    background: white;
+    text-align: center;
+    font-family: 'NanumSquareRound', serif;
+    font-size: 16px;
+}
+
+.menuBar>li .submenu>li:hover {
+    background: var(--patty);
+    color: white;
+}
+
+.menuBar>li .submenu>li:last-child {
+    border-radius: 0 0 20px 20px;
+}
+
+.btn1 {
+    width: 150px;
+    height: 50px;
+    margin-top: 35px;
+    border-radius: 100px 0 0 100px;
+    background: var(--patty);
+    font-family: 'NanumSquareRound', serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.btn2 {
+    width: 120px;
+    height: 50px;
+    margin-top: 35px;
+    border-radius: 0 100px 100px 0;
+    color: white;
+    font-family: 'NanumSquareRound', serif;
+    font-weight: bold;
+    font-size: 16px;
+    background: var(--bread);
+    transition: all 0.3s ease 0s;
+}
+
+.btn1:hover {
+    background: #FCDEC0;
+    color: var(--patty);
+}
+
+.btn2:hover {
+    background: #FCDEC0;
+    color: var(--bread);
+}
