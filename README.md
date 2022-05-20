@@ -1,4 +1,4 @@
-# burger-king-renewal
+# Burger King Renewal
 - I renewed the "Burger King" site.
 
 ## Features
