@@ -20,17 +20,16 @@
 
 <body>
     <header id="header">
-        <div class="fixedBar">
-            <div class="logo-part">
-                <a href="./index.html">
-                    <img src="./img/logo.png" alt="logo.png" width="120">
-                </a>
-                <span>버거킹</span>
-            </div>
-        </div>
+        <a href="./index.html">
+            <img src="./img/logo.png" alt="logo.png" width="120">
+            <span>버거킹</span>
+        </a>
     </header>
-    <nav class="fixedBar-bottom">
-        <span>HOME&nbsp; &gt; &nbsp;로그인</span>
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>로그인</li>
+        </ul>
     </nav>
     <main>
         <div class="container">
@@ -38,8 +37,8 @@
                 <span class="main-text">YOUR WAY</span>
                 <span class="main-text">어서오세요! 버거킹입니다.</span>
             </div>
-            <div class="flex main-content">
-                <div class="divide login-field1">
+            <div class="main-content">
+                <div class="login-field">
                     <span class="login-text"><i class="icon fa-solid fa-key"></i>일반 로그인</span>
                     <div class="info-input">
                         <input type="text" id="input-id" placeholder="아이디 (이메일)">
@@ -50,16 +49,14 @@
                         <input type="checkbox" id="check1"><label for="check1">아이디 저장</label>
                         <input type="checkbox" id="check2"><label for="check2">자동 로그인</label>
                     </div>
-                    <div>
-                        <button class="login-btn">로그인</button>
-                        <button class="join-btn">회원 가입</button>
-                    </div>
-                    <ul class="flex info-search">
-                        <li><a href="">아이디 찾기</a></li>
-                        <li><a href="">비밀번호 찾기</a></li>
+                    <button class="login-btn">로그인</button>
+                    <button class="join-btn">회원 가입</button>
+                    <ul class="info-search">
+                        <li><a href="#">아이디 찾기</a></li>
+                        <li><a href="#">비밀번호 찾기</a></li>
                     </ul>
                 </div>
-                <div class="divide login-field2">
+                <div class="login-field">
                     <span class="login-text"><i class="icon fa-solid fa-unlock-keyhole"></i>간편 로그인</span>
                     <div class="btn-group">
                         <button class="other-login naver-login">
@@ -76,7 +73,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="divide login-field3">
+                <div class="login-field">
                     <span class="login-text"><i class="icon fa-solid fa-user-lock"></i>비회원</span>
                     <div class="btn-group">
                         <button class="no-login order-go">주문하기</button>
@@ -100,9 +97,11 @@
         <section class="footer-bottom">
             <div class="footer-bottom-text1">
                 <h1>BURGER KING</h1>
-                <p>서울 종로구 삼봉로 71 G 타워 2층 주식회사 비케이알</p>
-                <p>사업자 등록번호 101-86-76277 / (주)BKR 대표이사 문영주</p>
-                <p>Copyright 2019 BKR Co., Ltd. All right Reserved</p>
+                <ul>
+                    <li>서울 종로구 삼봉로 71 G 타워 2층 주식회사 비케이알</li>
+                    <li>사업자 등록번호 101-86-76277 / (주)BKR 대표이사 문영주</li>
+                    <li>Copyright 2019 BKR Co., Ltd. All right Reserved</li>
+                </ul>
             </div>
             <div class="footer-bottom-text2">
                 <ul>
@@ -110,8 +109,10 @@
                     <li>개인정보취급방침</li>
                     <li>법적고지</li>
                 </ul>
-                <button>인재채용</button>
-                <button>가맹점모집</button>
+                <div class="footer-btn-group">
+                    <button class="footer-btn">인재채용</button>
+                    <button class="footer-btn">가맹점모집</button>
+                </div>
             </div>
         </section>
     </footer>

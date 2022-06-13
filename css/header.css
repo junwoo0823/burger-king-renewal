@@ -5,124 +5,112 @@
     top: 0;
     z-index: 100;
     width: 100%;
-    height: 120px;
     background: white;
+    box-shadow: 0 0 5px var(--black);
 }
 
-.fixedBar {
+#header>nav {
     display: flex;
-    width: 100%;
-    height: 120px;
-    justify-content: center;
-    background-color: white;
-    box-shadow: 0px 0px 5px var(--black);
+    justify-content: space-between;
+    align-items: center;
+    width: var(--width);
+    margin: 0 auto;
 }
 
-.fixedBar div {
-    margin-top: 50px;
-}
-
-.fixedBar ul {
+.menu-list {
     display: flex;
-    margin: auto 100px;
+}
+
+.menu-list span {
     font-family: 'yg-jalnan', serif;
-    font-size: 20px;
-}
-
-.fixedBar li {
-    list-style: none;
-    margin: 0 30px;
+    font-size: 2rem;
 }
 
 .menu1 span::after,
 .menu3 span::after {
     content: "▼";
     position: relative;
-    bottom: 3px;
-    left: 5px;
-    font-size: 1px;
+    bottom: .3rem;
+    left: .8rem;
+    font-size: .1rem;
 }
 
-.menuBar span {
-    height: 100%;
-}
-
-.menuBar>li {
+.menu-list>li {
     position: relative;
-    padding: 50px 0;
+    margin: 0 3rem;
+    padding: 5rem 0;
     text-align: center;
     cursor: pointer;
 }
 
-.menuBar>li .submenu {
+.menu-list>li .submenu {
     display: none;
     position: absolute;
+    top: 12rem;
 }
 
-.menuBar .menu1sub {
-    top: 120px;
-    left: -160px;
+.menu-list .menu1sub {
+    left: -3rem;
 }
 
-.menuBar .menu3sub {
-    top: 120px;
-    left: -150px;
+.menu-list .menu3sub {
+    left: -1.5rem;
 }
 
-.menuBar>li:hover .submenu {
+.menu-list>li:hover .submenu {
     display: block;
 }
 
-.menuBar>li .submenu>li {
-    width: 150px;
-    padding: 10px;
+.menu-list>li .submenu>li {
+    width: 15rem;
+    padding: 1rem;
     background: white;
     text-align: center;
-    font-family: 'NanumSquareRound', serif;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
-.menuBar>li .submenu>li:hover {
+.menu-list>li .submenu>li:hover {
     background: var(--patty);
     color: white;
 }
 
-.menuBar>li .submenu>li:last-child {
-    border-radius: 0 0 20px 20px;
+.menu-list>li .submenu>li:last-child {
+    border-radius: 0 0 2rem 2rem;
+}
+
+.nav-btn-group {
+    display: flex;
+}
+
+.nav-btn {
+    height: 5rem;
+    padding: 0 2.5rem;
+    border: 0;
+    box-shadow: 1px 1px 3px gray;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease 0s;
 }
 
 .btn1 {
-    width: 150px;
-    height: 50px;
-    margin-top: 35px;
-    border-radius: 100px 0 0 100px;
+    border-radius: 10rem 0 0 10rem;
     background: var(--patty);
-    font-family: 'NanumSquareRound', serif;
-    font-weight: bold;
-    font-size: 16px;
-    color: white;
-    transition: all 0.3s ease 0s;
 }
 
 .btn2 {
-    width: 120px;
-    height: 50px;
-    margin-top: 35px;
-    border-radius: 0 100px 100px 0;
-    color: white;
-    font-family: 'NanumSquareRound', serif;
-    font-weight: bold;
-    font-size: 16px;
+    border-radius: 0 10rem 10rem 0;
     background: var(--bread);
-    transition: all 0.3s ease 0s;
+}
+
+.nav-btn:hover {
+    background: #FCDEC0;
 }
 
 .btn1:hover {
-    background: #FCDEC0;
     color: var(--patty);
 }
 
 .btn2:hover {
-    background: #FCDEC0;
     color: var(--bread);
 }

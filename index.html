@@ -18,11 +18,11 @@
 
 <body>
     <header id="header">
-        <nav class="fixedBar">
+        <nav>
             <a href="./index.html">
                 <img src="./img/logo.png" alt="logo.png" width="120">
             </a>
-            <ul class="menuBar">
+            <ul class="menu-list">
                 <li class="menu1">
                     <span>메뉴 소개</span>
                     <ul class="menu1sub submenu">
@@ -48,8 +48,10 @@
                     </ul>
                 </li>
             </ul>
-            <button class="btn btn1" onclick="location.href='login.html';">딜리버리 주문</button>
-            <button class="btn btn2">매장 찾기</button>
+            <div class="nav-btn-group">
+                <button class="nav-btn btn1" onclick="location.href='login.html';">딜리버리 주문</button>
+                <button class="nav-btn btn2">매장 찾기</button>
+            </div>
         </nav>
     </header>
     <main id="container">
@@ -101,8 +103,8 @@
             <button id="nextBtn"></button>
         </div>
         <div class="order">
-            <a><img src="./img/app_img.jpg" alt="app-img" width="550" class="appImg"></a>
-            <a><img src="./img/delivery_img.jpg" alt="delivery-img" width="550" class="deliveryImg"></a>
+            <a href="#"><img src="./img/app_img.jpg" alt="app-img" width="550" class="appImg"></a>
+            <a href="#"><img src="./img/delivery_img.jpg" alt="delivery-img" width="550" class="deliveryImg"></a>
         </div>
     </main>
     <footer id="footer">
@@ -119,9 +121,11 @@
         <section class="footer-bottom">
             <div class="footer-bottom-text1">
                 <h1>BURGER KING</h1>
-                <p>서울 종로구 삼봉로 71 G 타워 2층 주식회사 비케이알</p>
-                <p>사업자 등록번호 101-86-76277 / (주)BKR 대표이사 문영주</p>
-                <p>Copyright 2019 BKR Co., Ltd. All right Reserved</p>
+                <ul>
+                    <li>서울 종로구 삼봉로 71 G 타워 2층 주식회사 비케이알</li>
+                    <li>사업자 등록번호 101-86-76277 / (주)BKR 대표이사 문영주</li>
+                    <li>Copyright 2019 BKR Co., Ltd. All right Reserved</li>
+                </ul>
             </div>
             <div class="footer-bottom-text2">
                 <ul>
@@ -129,8 +133,10 @@
                     <li>개인정보취급방침</li>
                     <li>법적고지</li>
                 </ul>
-                <button>인재채용</button>
-                <button>가맹점모집</button>
+                <div class="footer-btn-group">
+                    <button class="footer-btn">인재채용</button>
+                    <button class="footer-btn">가맹점모집</button>
+                </div>
             </div>
         </section>
     </footer>

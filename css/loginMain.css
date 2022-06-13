@@ -1,132 +1,123 @@
 @charset "utf-8";
 
-/* 공통 설정 */
-.text-center {
-    text-align: center;
-}
-
-.flex {
-    display: flex;
-}
-
-li {
-    list-style: none;
+body {
+    background: #FCDEC0;
 }
 
 /* 고정바 */
-.fixedBar {
-    position: relative;
-    justify-content: space-evenly;
+#header {
     background: #fa6400;
 }
 
-.fixedBar-bottom {
-    position: relative;
-    top: 120px;
-    min-height: 50px;
+#header>a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: var(--width);
+    margin: 0 auto;
+}
+
+#header>a>span {
+    font-family: 'yg-jalnan', serif;
+    font-size: 4rem;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    position: absolute;
+    top: 12rem;
+    width: 100%;
+    min-height: 5rem;
     background: var(--black);
 }
 
-.fixedBar-bottom span {
+nav>ul {
     position: relative;
-    top: .8em;
-    left: 28em;
-    font-family: 'NanumSquareRound';
+    display: flex;
+    top: 1.5rem;
+    width: var(--width);
+    margin: 0 auto;
+    padding-left: 6rem;
+    font-size: 1.6rem;
     color: white;
 }
 
-.logo-part {
-    position: relative;
-    bottom: 50px;
-    right: 25.4em;
-    user-select: none;
-}
-
-.logo-part span {
-    position: relative;
-    bottom: 42px;
-    right: 10px;
-    font-family: 'yg-jalnan', serif;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
+nav li:first-child::after {
+    content: ">";
+    margin: 0 1rem;
 }
 
 /* 메인 영역 */
 .container {
-    display: grid;
-    justify-content: center;
-    background: #FCDEC0;
-    font-family: 'yg-jalnan', serif;
+    width: var(--width);
+    margin: 0 auto;
+    padding: 5rem 0 10rem;
 }
 
 .main-title {
-    display: grid;
-    margin: 180px 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20rem 0 5rem;
+    font-family: 'yg-jalnan', serif;
 }
 
-.main-title>span:first-child {
-    position: relative;
-    top: 15px;
+.main-text:first-child {
     color: var(--bread);
+    margin-bottom: 1rem;
 }
 
 .main-text {
-    font-size: 40px;
+    font-size: 4rem;
 }
 
 .main-content {
-    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
 }
 
-.divide {
-    display: grid;
-    font-family: 'NanumSquareRound', serif;
-}
-
-.login-field1,
-.login-field2 {
-    padding-right: 4em;
-    margin-right: 4em;
+.login-field {
+    padding-right: 6em;
+    margin-right: 6em;
     border-right: 2px solid #C69B7B;
 }
 
-.login-field2,
-.login-field3 {
-    display: block;
+.login-field:last-child {
+    border: 0;
+}
+
+.login-text {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .icon {
-    margin-right: .5em;
-    border-radius: 100%;
-    background: black;
+    margin-right: 1rem;
+    border-radius: 20rem;
+    background: var(--black);
     color: white;
-    font-size: 15px;
+    font-size: 1.6rem;
 }
 
 .fa-key {
-    padding: .7em;
+    padding: 1rem;
 }
 
 .fa-unlock-keyhole {
-    padding: .7em .77em;
+    padding: 1rem 1.1rem;
 }
 
 .fa-user-lock {
-    padding: .7em .6em;
+    padding: 1rem .8rem;
 }
 
 #passwd-icon {
     position: absolute;
-    bottom: 16px;
-    right: 16px;
-    font-size: 20px;
+    bottom: 1.6rem;
+    right: 1.6rem;
+    font-size: 2rem;
     cursor: pointer;
-}
-
-.login-text {
-    font-size: 20px;
-    font-weight: 700;
 }
 
 .info-input {
@@ -135,34 +126,33 @@ li {
 }
 
 #input-id {
-    margin: 20px 0 10px;
+    margin: 2rem 0 1rem;
 }
 
 #input-id,
 #input-passwd {
-    border: none;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 10px;
-    font-family: 'NanumSquareRound', serif;
-    font-size: 16px;
+    border: 0;
+    padding: 1.5rem 2rem;
+    border: 0;
+    border-radius: 1rem;
+    font-size: 1.6rem;
     color: gray;
     transition: all .2s ease;
 }
 
 #input-id:focus,
 #input-passwd:focus {
-    box-shadow: 0 2px 6px 0 var(--patty);
-    border: none;
-    outline: none;
+    box-shadow: 0 2px 6px var(--patty);
+    border: 0;
 }
 
 .checkbox-field {
-    margin: 20px 0;
+    margin: 2rem 0;
 }
 
 .checkbox-field label {
     font-weight: 700;
+    font-size: 1.5rem;
 }
 
 input[type="checkbox"] {
@@ -172,64 +162,64 @@ input[type="checkbox"] {
 input[type="checkbox"]+label {
     position: relative;
     display: inline-block;
-    padding: 0 35px;
+    padding: 0 3.5rem;
     cursor: pointer;
 }
 
 input[type="checkbox"]+label:before {
     content: '⨯';
     position: absolute;
-    top: -4px;
+    top: -.8rem;
     left: 0;
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 1rem;
     background: #c0c0c0;
-    font-weight: 700;
-    line-height: 30px;
-    font-size: 20px;
-    color: white;
     text-align: center;
+    font-weight: 700;
+    line-height: 2.9rem;
+    font-size: 2rem;
+    color: white;
 }
 
 input[type="checkbox"]:checked+label:after {
     content: '○';
     position: absolute;
-    top: -4px;
+    top: -.8rem;
     left: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 10px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
     background: black;
     font-weight: 700;
-    line-height: 30px;
-    font-size: 16px;
+    line-height: 3rem;
+    font-size: 1.6rem;
     color: white;
     text-align: center;
 }
 
 .login-btn,
 .join-btn {
-    padding: 10px 30px;
-    margin: 5px 0;
-    border: none;
-    border-radius: 5px;
+    padding: 1rem 3rem;
+    margin: .2rem;
+    border: 0;
+    border-radius: .5rem;
     box-shadow: 0 1px 5px gray;
     font-family: 'yg-jalnan', serif;
-    font-size: 22px;
+    font-size: 2rem;
     font-weight: 700;
     color: white;
+    letter-spacing: .1rem;
+    transition: all .2s ease;
 }
 
 .login-btn {
     background: var(--bread);
-    transition: all .2s ease;
 }
 
 .join-btn {
     background: var(--patty);
-    transition: all .2s ease;
 }
 
 .login-btn:hover,
@@ -238,8 +228,10 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .info-search {
-    margin: 10px 0;
+    display: flex;
+    margin-top: 2rem;
     font-weight: 700;
+    font-size: 1.6rem;
 }
 
 .info-search>li:first-child::after {
@@ -247,26 +239,26 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .btn-group {
-    display: grid;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
 }
 
 .other-login {
     display: flex;
-    padding: 8px 30px;
+    padding: 8px 3rem;
     margin-bottom: 15px;
     align-items: center;
-    border: none;
+    border: 0;
     border-radius: 5px;
     box-shadow: 0 1px 5px gray;
-    font-family: 'NanumSquareRound', serif;
     font-size: 15px;
     font-weight: 700;
     transition: all .2s ease;
 }
 
 .other-login span {
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .other-login:hover {
@@ -275,9 +267,9 @@ input[type="checkbox"]:checked+label:after {
 
 .naver-icon {
     position: relative;
-    right: 30px;
+    right: 3rem;
     border-right: 2px solid #d1f4cc;
-    padding: 0 10px;
+    padding: 0 1rem;
 }
 
 .naver-login {
@@ -287,9 +279,9 @@ input[type="checkbox"]:checked+label:after {
 
 .kakao-icon {
     position: relative;
-    right: 30px;
-    padding: 0 10px;
-    border-right: 2px solid black;
+    right: 3rem;
+    padding: 0 1rem;
+    border-right: 2px solid var(--black);
 }
 
 .kakao-login {
@@ -298,8 +290,8 @@ input[type="checkbox"]:checked+label:after {
 
 .apple-icon {
     position: relative;
-    right: 30px;
-    padding: 0 13px;
+    right: 3rem;
+    padding: 0 1.3rem;
     border-right: 2px solid white;
 }
 
@@ -309,20 +301,15 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .no-login {
-    padding: 10px 30px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 10px;
+    padding: 1rem 3rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-radius: 1rem;
     box-shadow: 0 1px 5px gray;
-    font-family: 'NanumSquareRound', serif;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 700;
     background: #BE8C63;
     color: white;
-}
-
-.order-go,
-.order-info {
     transition: all .2s ease;
 }
 
