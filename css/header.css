@@ -26,55 +26,56 @@
     font-size: 2rem;
 }
 
-.menu1 span::after,
-.menu3 span::after {
-    content: "▼";
-    position: relative;
-    bottom: .3rem;
-    left: .8rem;
-    font-size: .1rem;
+.menu-list>li:not(.menu2) span::after {
+    content: "▾";
+    margin-left: .3rem;
+    font-size: 2rem;
 }
 
 .menu-list>li {
     position: relative;
-    margin: 0 3rem;
+    margin: 0 2rem;
     padding: 5rem 0;
     text-align: center;
     cursor: pointer;
 }
 
-.menu-list>li .submenu {
+.submenu {
     display: none;
     position: absolute;
     top: 12rem;
 }
 
-.menu-list .menu1sub {
+.menu1sub {
     left: -3rem;
 }
 
-.menu-list .menu3sub {
+.menu3sub {
     left: -1.5rem;
+}
+
+.menu4sub {
+    left: -4rem;
 }
 
 .menu-list>li:hover .submenu {
     display: block;
 }
 
-.menu-list>li .submenu>li {
-    width: 15rem;
+.submenu>li {
+    width: 14rem;
     padding: 1rem;
     background: white;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
-.menu-list>li .submenu>li:hover {
+.submenu>li:hover {
     background: var(--patty);
     color: white;
 }
 
-.menu-list>li .submenu>li:last-child {
+.submenu>li:last-child {
     border-radius: 0 0 2rem 2rem;
 }
 

@@ -68,14 +68,12 @@ footer {
     font-size: 1.6rem;
 }
 
-.footer-bottom-text2 li::after {
+.footer-bottom-text2 li +li::before {
     content: "│";
     color: white;
 }
 
-.footer-bottom-text2 li:last-child::after {
-    content: "";
-}
+
 
 .footer-btn-group {
     display: flex;
