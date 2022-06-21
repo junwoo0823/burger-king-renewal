@@ -32,7 +32,9 @@ html {
 
 body {
     font-family: 'NanumSquareRound', 'yg-jalnan', serif;
-    background: url(../img/bg_img.jpg) no-repeat fixed;
+    background: url(../img/bg_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     letter-spacing: .03rem;
 }
 
